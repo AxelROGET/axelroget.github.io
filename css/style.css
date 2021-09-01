@@ -1,0 +1,10 @@
+.timeline-content:hover .date {
+  transition: opacity 0.2s ease-out;
+  opacity:0;
+}
+
+.date {
+  opacity: 1;
+  display: block;
+  transition: opacity 0.2s ease-out
+}
