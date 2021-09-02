@@ -49,3 +49,11 @@ $(function(){
 
 
 });
+
+lock = () => {
+	document.querySelector("html").style.overflowY = "hidden";
+};
+
+unlock = () => {
+	document.querySelector("html").style.overflowY = "auto";
+};
