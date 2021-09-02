@@ -63,7 +63,7 @@
           <div class="date">2019</div>
           <h2>C4D : Projet Arduino</h2>
           <p>Étant fasciné par les parcs d’attraction et les technologies permettant de reproduire des sensations similaires aux grandes montagnes russes (tel qu’au Futuroscope), j’ai essayé de reproduire quelque chose de similaire, nommé C4D.<br>3D, effets stroboscopiques, fumée, ventilateur, le tout contrôlé par un Arduino. </p>
-          <a classe="btn-more" href="#popup-c4d" onclick="lock()">En savoir plus</a>
+          <a classe="btn-more" href="#modal-c4d" onclick="lock()">En savoir plus</a>
         </div>
       </div>   
  
@@ -79,7 +79,7 @@
           <p>
             L’objectif de ce projet est d’automatiser certaines tâches en reliant des APIs telle que celle de Discord. Son rôle est de, par exemple, accueillir les nouveaux utilisateurs en annonçant son arrivée et en remerciant la personne qui l’a invité.
           </p>
-          <a class="bnt-more" href="javascript:void(0)">EN SAVOIR PLUS</a>
+          <a class="bnt-more" href="#bot-discord">EN SAVOIR PLUS</a>
         </div>
       </div>
       
@@ -175,7 +175,7 @@
 
   <!-- POPUP C4D -->
 
-  <div class="modal" id="popup-c4d">
+  <div class="modal" id="modal-c4d">
     <div class="modal-content">
       <div style="z-index: 25;">
         <a onclick="unlock()" href="#close" class="modal-close" title="Fermer la fenêtre">X</a>
@@ -211,16 +211,18 @@
 
 
   <!-- POPUP BOT DISCORD -->
-  <div class="modal" id="popup-c4d">
+  <div class="modal" id="bot-discord">
     <div class="modal-content">
       <div style="z-index: 25;">
         <a onclick="unlock()" href="#close" class="modal-close" title="Fermer la fenêtre">X</a>
-        <h3 class="title">C4D : projet Arduino</h3>
+        <h3 class="title">BOT Discord :</h3>
       </div>
       
       <div class="modal-area">
 
         <div style="padding: 0; height: 100%; width: 100%;">
+
+          <p>L’objectif de ce projet est d’automatiser certaines tâches en reliant des APIs telle que celle de Discord.<br><br>Son rôle est de, par exemple, accueillir les nouveaux utilisateurs en annonçant son arrivée et en remerciant la personne qui l’a invité.<br><br>Au début, le bot n’était conçu que pour un serveur, sa configuration se faisait donc via le code source. Puis le bot s’est étendu et il a fallu concevoir une interface de configuration. Cette dernière s’est faite dans un premier temps directement depuis Discord, puis s’est étendue via une page Internet. <br><br>Il a également été nécessaire de mettre en place une base de données pour stocker la configuration de chaque serveur.<br><br>Développer le serveur web m’a appris beaucoup de chose : en premier temps les configurations DNS pour relier le nom de domaine au serveur, également les chiffrements (asymétrique, symétrique…), les cookies et les requêtes.<br><br>J’ai à tout prix cherché à éviter le MySQL et le PHP, je suis donc passé par express et ejs pour rendre le site dynamique. Ce qui pour gérer les requêtes fut un véritable casse-tête. <br><br>Le programme a d’autres fonctionnalités dont l’utilisation est plus occasionnelle. Par exemple, le bot proposait des mini-jeux, des jeux de rôles…<br><br>Un sous-projet au bot fut d’organiser des tournois de jeux vidéo. Le bot lit constamment un salon textuel dans lequel l’administrateur envoie une capture d’écran des tableaux des scores. Le programme extrait les informations de l’image (pseudos et scores) et les range dans un tableur pour annoncer le vainqueur automatiquement à la fin du tournois.<br><br>Les API utilisées sont : <br>- MongoDB & mongoose (pour la gestion des utilisateurs et des serveurs dans la base de données)<br>Discord.js<br>- Express (pour la gestion du serveur web)<br>- Canvas (pour la gestion d'image notamment pour les cartes d'expérience générées à partir d'une barre de progression et de l'avatar de l'utilisateur)<br>- Cookies (pour stocker l'identifiant du visiteur dans son navigateur pour faciliter sa reconnexion)<br>- Ejs (rend la page web dynamique)</p>
 
         </div>
 
