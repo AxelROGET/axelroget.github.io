@@ -60,7 +60,7 @@
           <div class="date">2019</div>
           <h2>C4D : Projet Arduino</h2>
           <p>Étant fasciné par les parcs d’attraction et les technologies permettant de reproduire des sensations similaires aux grandes montagnes russes (tel qu’au Futuroscope), j’ai essayé de reproduire quelque chose de similaire, nommé C4D.<br>3D, effets stroboscopiques, fumée, ventilateur, le tout contrôlé par un Arduino. </p>
-          <a classe="btn-more" href="#modal">En savoir plus</a>
+          <a classe="btn-more" href="#popup-c4d">En savoir plus</a>
         </div>
       </div>   
  
@@ -169,7 +169,7 @@
   </section>
 
 
-  <div class="modal" id="modal">
+  <div class="modal" id="popup-c4d">
     <div class="modal-content">
       <div style="z-index: 25;">
         <a href="#close" class="modal-close" title="Fermer la fenêtre">X</a>
@@ -179,14 +179,14 @@
       <div class="modal-area" style="height: 100%; width: 100%; bottom: 0; position: fixed; padding-top: 86px; overflow-y: auto;">
 
         <div style="padding: 0; height: 100%; width: 100%;">
-          <p>Bonsoir à tous</p>
-        </div>
+          <p>Étant fasciné par les parcs d’attraction et les technologies permettant de reproduire des sensations similaires aux grandes montagnes russes (tel qu’au Futuroscope), j’ai essayé de reproduire quelque chose de similaire, nommé C4D.<br>3D, effets stroboscopiques, fumée, ventilateur, le tout contrôlé par un Arduino. </p>
 
-        <p style="margin-bottom: 500px;">Étant fasciné par les parcs d’attraction et les technologies permettant de reproduire des sensations similaires aux grandes montagnes russes (tel qu’au Futuroscope), j’ai essayé de reproduire quelque chose de similaire, nommé C4D.<br>3D, effets stroboscopiques, fumée, ventilateur, le tout contrôlé par un Arduino.</p>
-        <p style="margin-bottom: 100px;">test</p>
-        <p>test 2.0</p>
-        <h1>ocucou</h1>
-        <h2>beeeeuh</h2>
+          <h4 style="text-decoration: underline solid;";>Première version :</h4>
+          <p>Durant la première version, l’utilisateur devait scanner un code barre, préalablement donné, sur la tablette à l’entrée de l’attraction. Ce code barre permettait l’identification de l’utilisateur, récupérait le solde de tickets restant de ce dernier grâce à une application conçue exclusivement pour l’attraction. L’application décrémentait ensuite un ticket à l’utilisateur identifié avant de lui proposer une large gamme d’attractions (sous forme de mini-films) que ce dernier pouvait choisir dans une interface extrêmement intuitive pour enfin envoyer le numéro du film par Bluetooth à l’Arduino.<br><br>L’Arduino affichait alors ce numéro pour que l’opérateur puisse sélectionner l’attraction sur la télévision diffusant le film. L'opérateur n'avait alors plus qu'à lancer le film en même temps qu'il appuie sur le bouton relié au second Arduino. Ce dernier agissait sur le ventilateur grâce à un module relai s’activant lors des accélérations. </p>
+
+          <h4 style="text-decoration: underline solid;">Seconde version :</h4>
+          <p>Pour la seconde version, l’entièreté du projet a été amélioré. La tablette de la première version a été remplacée par un Arduino et les codes barre par des cartes RFID. La gestion du nombre de tickets a donc dû être reprogrammée au langage Arduino. La communication sans fil entre les deux Arduino a donc aussi été reprogrammée. L’utilisation du protocole Bluetooth fut conservée.<br><br>La sélection de l’attraction se faisait donc grâce à un boitier à l’entré où l’utilisateur choisissait le numéro d’attraction grâce à des boutons poussoir après avoir scanné sa carte RFID. L'Arduino envoyait donc le numéro du film au second Arduino, qui est le modèle Leonardo, ce détail a son importance car un Arduino Leonardo peut agir comme un périphérique clavier ou souris en étant connecté à un ordinateur. <br><br>L'Arduino Leonardo recevait donc le numéro de film via Bluetooth. Lorsque l’opérateur pressait le bouton poussoir commandant le lancement de l'attraction, l'Arduino Leonardo prenait le contrôle du clavier de l'ordinateur (diffusant le film sur la télé) et, grâce aux raccourcis clavier VLC, sélectionnait le bon film et le lançait. La synchronisation étant donc faite de façon autonome. </p>
+        </div>
 
       </div>
     </div>
