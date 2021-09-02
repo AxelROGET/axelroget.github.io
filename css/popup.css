@@ -73,7 +73,7 @@ a.modal-open {
   transform:translate(-50%, -50%);
   transition:all .5s ease-in-out;
   transition-delay:.5s;
-  z-index:9999;
+  z-index:15;
   opacity:1;
 }
 .modal-close {
@@ -83,7 +83,7 @@ a.modal-open {
   color:#424242;
   font-weight:800;
   transition:all .5s ease-in-out;
-  z-index:+1;
+  z-index:30;
   background:rgba(0,0,0,0.1);
   text-align:center;
   border-radius:0 4px 0 0;
