@@ -29,6 +29,58 @@
   <section class="timeline">
     <div class="container">
 
+        <!-- Home Assistant -->
+         <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content js--fadeInRight">
+              <img src="img/home assistant.svg" class="timeline-img-header" alt="Icône du logiciel domotique Home Assistant" width="300px" style="height: min-content!important;">
+                <div class="date">Juin 2024</div>
+                <h2>Extension Home Assistant</h2>
+                <p>Home Assistant est un logiciel domotique qui ne propose pas d'interface permettant le réglage des autorisations utilisateur par utilisateur.
+                    <br>
+                    Au vu de ce besoin, j'ai donc développé une intégration Home Assistant qui permet de gérer les autorisations utilisateurs de manière flexible et intuitive.
+                </p>
+                <p>
+                    Ce projet open source, disponible sur Github, propose une interface web utilisant des technologies modernes telles que HTML, CSS, JavaScript, jQuery et Bootstrap. L'interface permet de créer des groupes d'utilisateurs, de les organiser par glisser-déposer, et de configurer les interactions possibles entre ces groupes et les différents appareils et entités de la maison connectée.
+                </p>
+                <p>
+                    En plus de l'aspect frontend, j'ai mis en place une API simple côté serveur pour gérer les données et les autorisations de manière efficace. Ce projet m'a également permis de me familiariser avec Docker et la compilation croisée, car l'intégration est compilée pour toutes les architectures supportées par Home Assistant.
+                </p>
+                <p>
+                    Cette intégration améliore significativement la sécurité et la personnalisation de Home Assistant, offrant aux utilisateurs la possibilité de définir des niveaux de contrôle spécifiques pour chaque utilisateur ou groupe d'utilisateurs. Ce projet est toujours en cours de développement et de nouvelles fonctionnalités sont prévues.
+                </p>
+                <a class="bnt-more" target="blank" href="https://github.com/AxelROGET/HA_RBAC">Voir le projet</a>
+
+            </div>
+         </div>
+
+    
+         <!-- Projet KTANE Avec Léa CAMUS, Alexis THELLIEZ -->
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content js--fadeInRight">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <img src="img/ktane.png" alt="Icone du jeu vidéo Keep Talking And Nobody Explodes" height="100px">
+                    <h2 style="margin-left: 20px;">Keep Talking And Nobody Explodes</h2>
+                </div>
+                <div class="date">Septembre - Avril 2024</div>
+                <p>
+                    Adaptation du jeu vidéo "Keep Talking And Nobody Explodes" en jeu de société.
+                    <br>
+                    Ce projet a été réalisé dans le cadre de la deuxième année à l'IG2I avec Léa Camus et Alexis Thelliez.
+                    <br><br>
+                    Le jeu consiste en une bombe à désamorcer, dont le manuel est détenu par un joueur et la bombe par un autre. Le joueur ayant le manuel doit guider le joueur ayant la bombe pour désamorcer la bombe avant qu'elle n'explose.
+                    <br><br>
+                    Pour réaliser ce projet, nous avons choisi d'utiliser des puces ATmega328P pour contrôler les différents éléments du jeu. Chaque énigme est représentée par un module électronique, contrôlé par une puce. Tous les modules sont reliés à un module maître qui gère le temps restant, les erreurs commises ainsi que la configuration du jeu. 
+                    <br><br>
+                    Cette configuration s'effectue via une interface web, accessible depuis un ordinateur lorsque le jeu est branché en USB. L'interface nous indique les étapes à suivre pour configurer le jeu. 
+                    <br><br>
+                    Ce projet nous a permis de concevoir et imprimer des cartes électroniques permettant de faire fonctionner les puces dans un environnement externe à une carte Arduino. 
+                </p>
+            </div> 
+          </div>
+        
+
       <!-- FCSC -->
       <div class="timeline-item">
         <div class="timeline-img"></div>
@@ -36,7 +88,7 @@
           <img src="https://github.com/AxelROGET/axelroget.github.io/blob/main/img/interdit%20mauvaise%20ip.jfif?raw=true" style="width: auto; height: auto;" class="timeline-img-header" alt="">
           <div class="date">Avril 2021</div>
           <h2>France Cyber Security Challenge</h2>
-          <p>Participation au FCSC, quelques jours après la découverte du domaine de la cybersécurité. Mon acharnement durant les 10 jours d'épreuves m'a valu la cent troisième place dans la catégorie Junior. J'ai pu découvrir pendant ces 10 jours de confinement beaucoup de failles, telle que les injections SQL (fait d'accéder à un site en tant qu'administrateur sans mot de passe), des bases de Forensics (fait d'analyser le contenu d'un disque dur pour éventuellement extraire des données s'il a mal été formaté) ou encore du reverse (décompiler un programme pour en extraire le code source ainsi que des données sensibles).</p>
+          <p>Participation au FCSC, quelques jours après la découverte du domaine de la cybersécurité. Mon acharnement durant les 10 jours d'épreuves m'a valu la cent troisième place dans la catégorie Junior. J'ai pu découvrir pendant ces 10 jours de confinement beaucoup de failles, telle que les injections SQL (fait d'accéder à un site en tant qu'administrateur sans mot de passe), des bases de Forensics (fait d'analyser le contenu d'un disque dur pour éventuellement extraire des données s'il a mal été formaté) ou encore du Reverse Engineering (décompiler un programme pour en extraire le code source ainsi que des données sensibles).</p>
         </div>
       </div>
 
@@ -54,7 +106,7 @@
       </div>  
 
        <!-- Millis() -->
-       <div class="timeline-item">
+      <!--  <div class="timeline-item">
   
         <div class="timeline-img"></div>
   
@@ -64,7 +116,7 @@
           <p>Présentation à la classe de première la fonction <em>millis()</em> et introduction au moniteur série pour débugger en complément aux cours d'Arduino. </p>
           <a class="bnt-more" target="blank" href="https://docs.google.com/presentation/d/1UkqxMUl9r7vVmXZ0clO3HIiidV_KQVaft8slGOHv1x0/edit?usp=sharing">Accéder au cours</a>
         </div>
-      </div>  
+      </div>   -->
 
        <!-- ESP8266 -->
        <div class="timeline-item">
@@ -76,7 +128,8 @@
           <h2>ESP8266</h2>
           <p>L'ESP8266 peut être utilisé comme un module Arduino, mais également comme un microcontrôleur à part grâce à un adaptateur USB. J'ai tout d'abord essayé, en vain, la première méthode avant d'acheter un adaptateur USB.
             C'est après de nombreuses heures que les premières commandes AT fonctionnèrent. J'ai dans un premier temps configuré l'ESP en serveur web en injectant une page web (l'ESP est donc connecté au routeur) pour qu'il agisse comme un serveur web. J'ai pu contrôler des LEDs et des relais grâce aux requêtes via cette page web.
-            J'ai également essayé d'isoler l'ESP du réseau pour qu'il agisse en point d'accès wifi. En modifiant les paramètres DNS, j'ai pu contourner ceux de Google et d'Apple pour que, lorsque la connexion est établie entre l'appareil et le point d'accès, la page hébergée sur le routeur s'ouvre automatiquement.
+            <br><br>
+            J'ai également essayé d'isoler l'ESP du réseau pour qu'il agisse en point d'accès wifi. En modifiant les paramètres DNS, j'ai pu contourner ceux de Google et d'Apple pour que, lorsque la connexion est établie entre l'appareil et le point d'accès, la page hébergée sur le routeur s'ouvre automatiquement. C'est avec ce même principe que les réseaux wifi publics fonctionnent.
             </p>
         </div>
       </div>   
@@ -91,24 +144,8 @@
           <h2>Impression 3D</h2>
           <div class="date">2020 - maintenant</div>
           <p>Acquisition et découverte d'une imprimante 3D Replicator 2. Utilisée pour faire des supports, réparer un objet, contenir un projet en Arduino…<br><br>Pour créer ou personnaliser mes réalisations, j'ai utilisé Fusion 360 dont j'ai découvert le fonctionnement et l'utilisation par des tutos.</p>
-          <a class="bnt-more" href="https://drive.google.com/drive/u/0/folders/19Umzhstq-g_rz6PKWBukhi4wUoOM8zhG" target="blank">Accéder au Google Drive</a>
         </div>
       </div>  
-
-      <!-- Raspberry PI 3 -->
-      <div class="timeline-item">
-  
-        <div class="timeline-img"></div>
-  
-        <div class="timeline-content js--fadeInLeft">
-          <h2>Découverte Raspberry PI 3</h2>
-          <div class="date">2020</div>
-          
-          <p>
-            Découverte du Raspberry PI 3, Raspbian (linux), hébergement d'un serveur WEB et d'un serveur Domoticz.
-          </p>
-        </div>
-      </div>
 
         <!-- Bot discord -->
         <div class="timeline-item">
